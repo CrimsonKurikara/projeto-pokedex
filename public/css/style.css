@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 42px;
+  text-shadow: 0 0 1rem #00000060;
+  text-align: center;
+}
+
+.links {
+  font-weight: 300;
+  font-size: 32px;
+  color: #000000;
+  text-decoration: none;
+  font-style: bold;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
+}
+.nav_links {
+  list-style: none;
+  display: flex;
+}
+
+.nav_links li {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0px 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.nav_links li {
+  transition: all 0.3s ease 0s;
+}
+.nav_links li:hover {
+  background-color: rgb(255, 68, 68);
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #fff;
+}
+body {
+  background-color: rgb(255, 68, 68);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#container {
+  margin: 1rem 1rem 1rem 1rem;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img info ."
+    ". . ."
+    ". . .";
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+#img {
+  grid-area: img;
+}
+
+#info {
+  grid-area: info;
+  margin: 50px 50px 50px 50px;
+}
+
+a.card {
+  width: 20rem;
+  padding: 3rem;
+  box-shadow: 0 0 1rem #00000060;
+  margin: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+a.card:hover {
+  transform: scale(1.1);
+}
+
+a.card img {
+  width: 15rem;
+  height: 15rem;
+}
+
+a.card h2 {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  color: #000;
+}
+
+section#pokedex {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#cadastrar {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 0 20rem 10rem 20rem;
+  box-shadow: 0 0 1rem #00000060;
+  border-radius: 1rem;
+}
+
+section#cadastrar h2 {
+  color: rgb(255, 68, 68);
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+section#cadastrar form {
+  width: 100%;
+  padding: 3rem;
+}
+
+section#cadastrar form div input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border: 0.1rem solid #ccc;
+}
+
+section#cadastrar form div label {
+  font-size: 1.3rem;
+  color: rgb(255, 0, 0);
+}
+
+section#cadastrar form button {
+  border: 1px solid rgb(255, 68, 68);
+  background-color: #fff;
+  color: rgb(255, 68, 68);
+  padding: 1rem;
+  font-size: 0.8vw;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  width: 40%;
+}
+
+section#cadastrar form button:hover {
+  background-color: rgb(255, 68, 68);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+section#message {
+  padding: 1rem;
+  background-color: rgb(197, 255, 214);
+  color: #004d04;
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 2rem;
+}
+
+span#close:hover {
+  color: rgb(255, 0, 0);
+  transform: scale(1.2);
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  border-radius: 15px;
+}
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .form {
+  width: 100%;
+}
+.wrapper .form .input_field {
+  margin-bottom: 15px;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.wrapper .form .input_field label {
+  width: 200%;
+  color: #000;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}

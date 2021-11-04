@@ -10,28 +10,25 @@
   <body>
     <header>
       <section class="navegacao">
-        <nav>
-          <ul class="nav_links">
-            <li class="links">
-              <a class="links" href="/">Pagina Principal</a>
-            </li>
-            <li class="links">
-              <a class="links" href="/cadastro">Cadastro</a>
-            </li>
-          </ul>
-        </nav>
+      <nav>
+        <ul class="nav_links">
+          <li class="links"><a class="links" href="/">Home</a></li>
+          <li class="links"><a class="links" href="/cadastro">Cadastro</a></li>
+        </ul>
+      </nav>
       </section>
     </header>
-    <% if(message != "") { %>
-    <section id="message">
-      <p><%= message %></p>
-      <span id="close">&times;</span>
+      <% if(message != "") { %>
+      <section id="message">
+        <p><%= message %></p>
+        <span id="close">&times;</span>
+      </section>
+      <% } %>
     </section>
-    <% } %>
     <h1>Pokedex</h1>
     <section id="pokedex">
-      <% pokedex.forEach((item, index)) => { %>
-      <a class="card" href="/detalhes/ <%= index%>">
+      <% pokedex.forEach((item, index) => { %>
+      <a class="card" href="/detalhes/<%= index %>">
         <h4><b><%= item.nome %></b></h4>
         <img src="<%= item.imagem %>" alt="Pokemon" style="width: 100%" />
         <p><%= item.tipo %></p>
