@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
   margin: 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 h1 {
@@ -243,8 +243,6 @@ span#close:hover {
 }
 .wrapper .form .input_field {
   margin-bottom: 15px;
-  /* display: flex; */
-  /* align-items: center; */
 }
 
 .wrapper .form .input_field label {
