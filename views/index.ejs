@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Pokedex | Pagina Inicial</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <section class="navegacao">
-            <nav>
-                <ul class="nav_links">
-                    <li class="links"><a class="links" href="/">Pagina Principal</a></li>
-                    <li class="links"><a class="links" href="/cadastro">Cadastro</a></li>
-                </ul>
-            </nav>
-        </section>
+      <section class="navegacao">
+        <nav>
+          <ul class="nav_links">
+            <li class="links">
+              <a class="links" href="/">Pagina Principal</a>
+            </li>
+            <li class="links">
+              <a class="links" href="/cadastro">Cadastro</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
     <% if(message != "") { %>
     <section id="message">
-        <p><%= message %></p>
-        <span id="close">&times;</span>
+      <p><%= message %></p>
+      <span id="close">&times;</span>
     </section>
     <% } %>
     <h1>Pokedex</h1>
     <section id="pokedex">
-        <% pokedex.forEach((item, index)) => { %>
-        <a class="card" href="/detalhes/ <%= index%>">
-            <h4><b><%= item.nome %></b></h4>
-            <img src="<%= item.imagem %>" alt="Pokemon" style="width: 100%" />
-            <p><%= item.tipo %></p>
-        </a>
-        <% }) %>
+      <% pokedex.forEach((item, index)) => { %>
+      <a class="card" href="/detalhes/ <%= index%>">
+        <h4><b><%= item.nome %></b></h4>
+        <img src="<%= item.imagem %>" alt="Pokemon" style="width: 100%" />
+        <p><%= item.tipo %></p>
+      </a>
+      <% }) %>
     </section>
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>

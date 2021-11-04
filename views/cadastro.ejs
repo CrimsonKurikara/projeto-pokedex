@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Pokedex | Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <section class="navegacao">
+            <nav>
+                <ul class="nav_links">
+                    <li class="links">
+                        <a class="links" href="/">Pagina Principal</a>
+                    </li>
+                    <li class="links">
+                        <a class="links" href="/cadastro">Cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <div class="wrapper">
+        <div class="title">Cadastro de Pokemon</div>
+        <div class="form">
+            <form action="/new" method="post">
+                <div class="input_field" tabindex="1">
+                    <label for="numero">Número: </label>
+                    <input type="text" name="numero" class="input" id="numero" placeholder="Digite o número" required />
+                </div>
+                <div class="input_field" tabindex="2">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" class="input" id="nome" placeholder="Digite o nome" required />
+                </div>
+                <div class="input_field" tabindex="3">
+                    <label for="tipo">Tipo: </label>
+                    <input type="text" name="tipo" class="input" id="tipo" placeholder="Digite o tipo" required />
+                </div>
+                <div class="input_field" tabindex="4">
+                    <label for="imagem">Imagem: </label>
+                    <input type="text" name="imagem" class="input" id="imagem" placeholder="Digite o link da imagem"
+                        required />
+                </div>
+                <div class="input_field" tabindex="5">
+                    <label for="descricao">Descrição: </label>
+                    <input type="text" name="descricao" class="input" id="descricao" placeholder="Digite a descrição"
+                        required />
+                </div>
+                <div class="input_field" tabindex="6">
+                    <label for="altura">Altura: </label>
+                    <input type="text" name="altura" class="input" id="altura" placeholder="Digite a altura" required />
+                </div>
+                <div class="input_field" tabindex="7">
+                    <label for="peso">Peso: </label>
+                    <input type="text" name="peso" class="input" id="peso" placeholder="Digite o peso" required />
+                </div>
+                <div class="input_field" tabindex="8">
+                    <label for="categoria">Categoria: </label>
+                    <input type="text" name="categoria" class="input" id="categoria" placeholder="Digite a categoria"
+                        required />
+                </div>
+                <div class="input_field" tabindex="9">
+                    <label for="habilidade">Habilidade: </label>
+                    <input type="text" name="habilidade" class="input" id="habilidade" placeholder="Digite a habilidade"
+                        required />
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
