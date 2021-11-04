@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex | Detalhes</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <section class="navegacao">
-            <nav>
-                <ul class="nav_links">
-                    <li class="links">
-                        <a class="links" href="/">Pagina Principal</a>
-                    </li>
-                    <li class="links">
-                        <a class="links" href="/cadastro">Cadastro</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+      <section class="navegacao">
+        <nav>
+          <ul class="nav_links">
+            <li class="links">
+              <a class="links" href="/">Pagina Principal</a>
+            </li>
+            <li class="links">
+              <a class="links" href="/cadastro">Cadastro</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
     <div id="container">
-        <div id="img">
-            <img src="<%= pokemon.imagem %>" alt="Pokemon" />
-        </div>
-        <div id="info">
-            <p><b>Número: </b><%= pokemon.numero %></p>
-            <p><b>Nome: </b><%= pokemon.nome %></p>
-            <p><b>Tipo: </b><%= pokemon.tipo %></p>
-            <p><b>Descrição: </b><%= pokemon.descricao %></p>
-            <p><b>Altura: </b><%= pokemon.altura %></p>
-            <p><b>Peso: </b><%= pokemon.peso %></p>
-            <p><b>Categoria: </b><%= pokemon.categoria %></p>
-            <p><b>Habilidade: </b><%= pokemon.habilidade %></p>
-        </div>
+      <div id="img">
+        <img src="<%= pokemon.imagem %>" alt="Pokemon" />
+      </div>
+      <div id="info">
+        <p><b>Número: </b><%= pokemon.numero %></p>
+        <p><b>Nome: </b><%= pokemon.nome %></p>
+        <p><b>Tipo: </b><%= pokemon.tipo %></p>
+        <p><b>Descrição: </b><%= pokemon.descricao %></p>
+        <p><b>Altura: </b><%= pokemon.altura %></p>
+        <p><b>Peso: </b><%= pokemon.peso %></p>
+        <p><b>Categoria: </b><%= pokemon.categoria %></p>
+        <p><b>Habilidade: </b><%= pokemon.habilidade %></p>
+      </div>
     </div>
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>
